@@ -1,0 +1,16 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://10.0.0.12:443   # Harvester API endpoint
+    certificate-authority-data: <base64-encoded CA>
+  name: harvester
+contexts:
+- context:
+    cluster: harvester
+    user: admin
+  name: harvester
+current-context: harvester
+users:
+- name: admin
+  user:
+    token: token-tvrz2:7mq2fqb77cftq7m5tfxpnrlj45vg7mg24x8kl6qszlbjsbdcww88xs

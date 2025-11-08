@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "harvester" {
-  endpoint  = "https://<harvester-api-endpoint>:443"
+  endpoint  = "https://10.0.0.12:443"
   username  = "admin"
   password  = "uqMOYGSQkemwI9lN"
   insecure  = true
